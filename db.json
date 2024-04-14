@@ -1,0 +1,376 @@
+{
+ "marcas":[
+    {
+      "id": 1,
+      "nome": "Adidas"
+    },
+    {
+      "id": 2,
+      "nome": "Vans"
+    },
+    {
+      "id": 3,
+      "nome": "Reebook"
+    },
+    {
+        "id": 4,
+        "nome": "Under Armour"
+      },
+      {
+        "id": 5,
+        "nome": "Nike"
+      },
+      {
+        "id": 6,
+        "nome": "Puma"
+      },
+      {
+        "id": 7,
+        "nome": "Umbro"
+      }
+ ],
+ "tipoDeProduto":[
+  {
+    "id": 1,
+    "nome": "Camisas"
+  },
+  {
+    "id": 2,
+    "nome": "Bolas"
+  },
+  {
+    "id": 3,
+    "nome": "Bolsas"
+  },
+  {
+      "id": 4,
+      "nome": "Bones"
+    },
+    {
+      "id": 5,
+      "nome": "Camisas de times"
+    },
+    {
+      "id": 6,
+      "nome": "Chinelos"
+    },
+    {
+      "id": 7,
+      "nome": "Chuteiras"
+    },
+    {
+      "id": 8,
+      "nome": "Tênis"
+    }
+],
+ 
+ 
+ "categorias": [
+    {
+        "id": 1,
+        "nome": "Esporte e Lazer"
+    },
+    {
+        "id": 2,
+        "nome": "Casual"
+    },
+    {
+        "id": 3,
+        "nome": "Utilitário"
+    },
+    {
+        "id": 4,
+        "nome": "Corrida"
+    }
+],
+"generos": [
+    {
+        "id": 1,
+        "nome": "Masculino"
+    },
+    {
+        "id": 2,
+        "nome": "Feminino"
+    },
+    {
+        "id": 3,
+        "nome": "Unissex"
+    }
+],
+"produtos": [
+   {
+    "id": 1,
+    "nome": "Nike",
+    "descricao":"Lorem ipdom domor",
+    "preco": 219.9,
+    "imagem": "https://imgnike-a.akamaihd.net/768x768/000727IM.jpg",
+    "categoria": {
+      "id": 1,
+      "nome": "Casual"
+      
+    },
+    "marca":{
+      "id": 5,
+      "nome": "Nike"
+      
+    },
+    "tipoDeProduto":{
+      "id": 8,
+      "nome": "Tênis"
+    },
+  "genero": "Feminino",
+    "estado": "Novo",
+    "ref":"38416711",
+    "avaliacoes": {
+      "media": 4.7,
+      "total": 90
+    },
+    "tamanhos": [39, 40, 41, 42, 43],
+    "cores":["red", "green", "blue", "black", "white"]
+
+   },
+   {
+    "id": 2,
+    "nome": "Puma",
+    "descricao":"Lorem ipdom domor",
+    "preco": 259.9,
+    "imagem": "https://static.netshoes.com.br/produtos/tenis-infantil-puma-caven-20-ac-bdp/44/2I3-9905-044/2I3-9905-044_zoom1.jpg?ts=1708968046&",
+    "categoria": {
+      "id": 1,
+      "nome": "Esporte e Lazer"
+    },
+    "marca":{
+      "id": 6,
+      "nome": "Puma"
+    },
+    "tipoDeProduto":{
+      "id": 8,
+      "nome": "Tênis"
+    },
+    "genero": "Masculino",
+    "estado": "Usado",
+    "ref":"58416711",
+    "avaliacoes": {
+      "media": 4.7,
+      "total": 90
+    },
+    "tamanhos": [39, 40, 41, 42, 43],
+    "cores":["red", "green", "blue", "black", "white"]
+
+   },
+   {
+    "id": 3,
+    "nome": "Under Armour",
+    "descricao":"Lorem ipdom domor",
+    "preco": 450.9,
+    "imagem":"https://underarmourbr.vtexassets.com/arquivos/ids/322572-800-auto?v=638318461191100000&width=800&height=auto&aspect=true",
+    "categoria": {
+      "id": 4,
+      "nome": "Corrida"
+    },
+    "marca":{
+      "id": 4,
+      "nome": "Under Armour"
+    },
+    "tipoDeProduto":{
+      "id": 8,
+      "nome": "Tênis"
+    },
+    "genero": "Unissex",
+    "estado": "Novo",
+    "ref":"78416711",
+    "avaliacoes": {
+      "media": 4.7,
+      "total": 90
+    },
+    "tamanhos": [39, 40, 41, 42, 43],
+    "cores":["red", "green", "blue", "black", "white"],
+    "desconto": 20
+
+   },
+   {
+    "id": 4,
+    "nome": "Umbro",
+    "descricao":"Lorem ipdom domor",
+    "preco": 279.9,
+    "imagem": "https://umbro.vtexassets.com/arquivos/ids/436963/0F80048_442.jpg?v=637650110100700000",
+    "categoria": {
+      "id": 2,
+      "nome": "casual"
+      
+    },
+    "marca":{
+      "id": 7,
+      "nome": "Umbro"
+       },
+       "tipoDeProduto":{
+        "id": 7,
+        "nome": "Chuteiras"
+      },
+    "genero": "Unissex",
+    "estado": "Novo",
+    "ref":"68416711",
+    "avaliacoes": {
+      "media": 4.7,
+      "total": 90
+    },
+    "tamanhos": [39, 40, 41, 42, 43],
+    "cores":["red", "green", "blue", "black", "white"]
+
+   },
+   {
+    "id": 5,
+    "nome": "Vans",
+    "descricao":"Lorem ipdom domor",
+    "preco": 450.9,
+    "imagem": "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h16/h82/h00/h00/11311172878366/1001200210001U-01-BASEIMAGE-Hires.jpg",
+    "categoria": {
+      "id": 3,
+      "nome": "Casual"
+    },
+    "marca":{
+      "id": 2,
+      "nome": "Vans"
+    },
+    "tipoDeProduto":{
+      "id": 8,
+      "nome": "Tênis"
+    },
+    "genero": "Unissex",
+    "estado": "Novo",
+    "ref":"18416711",
+    "avaliacoes": {
+      "media": 4.7,
+      "total": 90
+    },
+    "tamanhos": [39, 40, 41, 42, 43],
+    "cores":["red", "green", "blue", "black", "white"],
+    "desconto": 20
+
+   },
+   {
+    "id": 6,
+    "nome": "Adidas",
+    "descricao":"Lorem ipdom domor",
+    "preco": 129.9,
+    "imagem": "https://t-static.dafiti.com.br/pfL66pxOqKc4B-caX1JV1ZtVHYA=/fit-in/430x623/static.dafiti.com.br/p/adidas-adidas-t%c3%aanis-runfalcon-3.0-9654-72565931-1-zoom.jpg",
+    "categoria": {
+      "id": 1,
+      "nome": "Esporte e Lazer"
+    },
+    "marca":{
+      "id": 1,
+      "nome": "Adidas"
+    },
+    "tipoDeProduto":{
+      "id": 8,
+      "nome": "Tênis"
+    },
+    "genero": "Feminino",
+    "estado": "Usado",
+    "ref":"38486711",
+    "avaliacoes": {
+      "media": 4.7,
+      "total": 90
+    },
+    "tamanhos": [39, 40, 41, 42, 43],
+    "cores":["red", "green", "blue", "black", "white"]
+
+   },
+   {
+    "id": 7,
+    "nome": "Camisa Corinthians",
+    "descricao":"Lorem ipdom domor",
+    "preco": 299.9,
+    "imagem": "https://imgnike-a.akamaihd.net/768x768/0271170L.jpg",
+    "categoria": {
+      "id": 2,
+      "nome": "Casual"
+    },
+    "marca":{
+      "id": 5,
+      "nome": "Nike"
+    },
+    "tipoDeProduto":{
+      "id": 5,
+      "nome": "Camisas de times"
+     },
+    "genero": "Masculino",
+    "estado": "Novo",
+    "ref":"39416719",
+    "avaliacoes": {
+      "media": 4.7,
+      "total": 90
+    },
+    "tamanhos": [39, 40, 41, 42, 43],
+    "cores":["red", "green", "blue", "black", "white"]
+
+   },
+   {
+    "id": 8,
+    "nome": "Camisa Adidas Atle Mineiro",
+    "descricao":"Lorem ipdom domor",
+    "preco": 199.9,
+    "imagem": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab260a9704ee4fae895bafd201140692_9366/Camisa_1_Clube_Atletico_Mineiro_23-24_Preto_GC4263_01_laydown.jpg",
+    "categoria": {
+      "id": 2,
+      "nome": "Casual"
+    },
+    "marca":{
+      "id": 1,
+      "nome": "Adidas"
+    },
+    "tipoDeProduto":{
+      "id": 5,
+      "nome": "Camisas de times"
+     },
+    "genero": "Masculino",
+    "estado": "Novo",
+    "ref":"37416719",
+    "avaliacoes": {
+      "media": 4.7,
+      "total": 90
+    },
+    "tamanhos": [39, 40, 41, 42, 43],
+    "cores":["red", "green", "blue", "black", "white"]
+
+   },
+   {
+    "id": 9,
+    "nome": "Bola Nike Pitch Futebol",
+    "descricao":"Lorem ipdom domor",
+    "preco": 99.9,
+    "imagem": "https://imgnike-a.akamaihd.net/768x768/02685851.jpg",
+    "categoria": {
+      "id": 2,
+      "nome": "Esporte e Lazer"
+    },
+    "marca":{
+      "id": 5,
+      "nome": "Nike"
+    },
+    "tipoDeProduto":{
+      "id": 2,
+      "nome": "Bolas"
+     },
+    "genero": "Masculino",
+    "estado": "Novo",
+    "ref":"48416719",
+    "avaliacoes": {
+      "media": 4.7,
+      "total": 90
+    },
+    "tamanhos": [39, 40, 41, 42, 43],
+    "cores":["red", "green", "blue", "black", "white"]
+
+   }
+   
+   
+   
+]
+
+
+
+
+}
+
