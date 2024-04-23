@@ -106,13 +106,38 @@ const ProdutosContainer = styled.section`
 const Produtos = () => {
   
   const[marcas, setMarcas] = useState([]);
-  const[tiposDeProdutos, setTiposDeProdutos] = useState([])
+  const[tiposDeProdutos, setTiposDeProdutos] = useState([]);
   const[categorias, setCategorias] = useState([]);
   const[generos, setGeneros] = useState([]);
   const[produtos, setProdutos] = useState([]);
-  const[ordenacao, setOrdenacao] = useState('')
+  const[ordenacao, setOrdenacao] = useState('');
   const[filtros, setFiltros] = useState([]);
   const[produtosFiltrados, setProdutosFiltrados] = useState([]);
+  const [mostrarMensagem, setMostrarMensagem] = useState(false);
+
+  const sortedProducts = produtosFiltrados.slice().sort((a, b)=>{
+    if (ordenacao === "relevancia"){
+      
+    }else if (ordenacao === "populares"){
+
+    }else if (ordenacao === "vendidos"){
+
+    }else if (ordenacao === "lancamentos"){
+      
+    }else if (ordenacao === "ofertas"){
+      
+    }else if (ordenacao === "avaliados"){
+      
+    }else if (ordenacao === "precoAlto"){
+      
+    }else if (ordenacao === "precoBaixo"){
+      
+    }
+  });
+
+  {sortedProducts.map((produto)=>(
+    <Produto key={produto.id} nome={produto.nome} categoria={produto.categoria.nome} imagem={produto.imagem} preco={produto.preco} desconto={produto.desconto}/>
+  ))}
  
  
 
@@ -170,9 +195,11 @@ const Produtos = () => {
   useEffect(()=>{
      if(filtros.length > 0){
       setProdutosFiltrados(produtos.filter(p=> filtros.includes(p.marca.nome.toLowerCase()) || filtros.includes(p.tipoDeProduto.nome.toLowerCase()) || filtros.includes(p.categoria.nome.toLowerCase()) || filtros.includes(p.genero.toLowerCase())  || filtros.includes(p.estado.toLowerCase())));
+      setMostrarMensagem(true);
       return;
      }
      setProdutosFiltrados(produtos);
+     setMostrarMensagem(false)
 
     
 
@@ -181,10 +208,10 @@ const Produtos = () => {
 
   return (
       <ProdutosContainer>
-         <div className="selected" value={ordenacao} onChange={(e) => setOrdenacao(e.target.value)}>
+         <div className="selected">
          <label htmlFor="drip-select">Ordenar por:</label>
          
-         <select name="drip-store" id="dripSelect">
+         <select name="drip-store" id="dripSelect" value={ordenacao} onChange={(e) => setOrdenacao(e.target.value)}>
           <option value="relevancia">Mais relevante</option>
           <option value="populares">Mais populares</option>
           <option value="vendidos">Mais vendidos</option>
@@ -195,7 +222,11 @@ const Produtos = () => {
           <option value="precoBaixo">Menor Preço</option>
          </select>
          </div>
-       
+         {
+  filtros.length > 0 && (
+    <div>Resultados dos produtos: </div>
+  )
+}
         
         
       

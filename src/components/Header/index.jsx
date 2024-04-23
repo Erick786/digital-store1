@@ -6,12 +6,19 @@ import thumb from "./assets/group.png"
 import { useContext, useState } from 'react';
 import { LoginContext } from '../../contexts/loginContexts';
 
+
+
+
+
+
+
 const Header = () => {
-     
+    
   const [visibleCart, setVisibleCart] = useState(false);
    const { estaLogado } = useContext(LoginContext);
   return (
     <header>
+       
       <div className="logo">
         <img src={icone} alt="Digital Store logo" />
         {'Digital Store'}
